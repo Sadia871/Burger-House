@@ -8,7 +8,12 @@ export default function Headline() {
        Order Now
      </button>
      </div>
-     <Image src="/headline.jpg" alt="Restaurant Logo" className="h-150 w-200   " />
+     <Image src="/headline.jpg" alt="Restaurant Logo" className="h-150 w-200 
+     
+rounded-full" width={200} height={150}>
+     </Image>
+     
+
     </div>
            
     );

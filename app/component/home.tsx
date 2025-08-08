@@ -8,16 +8,20 @@ export function Header() {
     <nav className="navbar bg-amber-300 p-1 rounded">
           <ul className="flex space-x-5 bg-amber-300">
             <li>
-              <Link href="/" className="p-2 text-2xl text-black hover:text-amber-50 hover:underline transition duration-300  font-bold ">Home</a>
+              <Link href="/" className="p-2 text-2xl text-black hover:text-amber-50 hover:underline transition duration-300  font-bold ">Home
+              </Link>
             </li>
             <li>
-              <Link href="/menu" className="p-2 text-2xl text-black hover:text-amber-50 hover:underline transition duration-300 font-bold">Menu</a>
+              <Link href="/menu" className="p-2 text-2xl text-black hover:text-amber-50 hover:underline transition duration-300 font-bold">Menu
+              </Link>
             </li>
             <li>
-              <Link href="/about" className= "p-2 text-2xl text-black hover:text-amber-50 hover:underline transition duration-300 font-bold">About</a>
+              <Link href="/about" className= "p-2 text-2xl text-black hover:text-amber-50 hover:underline transition duration-300 font-bold">About
+              </Link>
             </li>
             <li>
-              <Link href="/contact" className= "text-2xl p-2 text-black hover:text-amber-50 hover:underline transition duration-300 font-bold">Contact</a>
+              <Link href="/contact" className= "text-2xl p-2 text-black hover:text-amber-50 hover:underline transition duration-300 font-bold">Contact
+              </Link>
             </li>
           </ul>
         </nav>

@@ -7,30 +7,12 @@ export default function HeroWithSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)
   
   // Sample images for the slider
-  const sliderImages = [
-    {
-      src: "burger.jpg",
-      alt: "Burger with Fries",
-      title: "Burger with Fries"
-    },
-    {
-      src: "dish2.jpg", 
-      alt: "Pasta Carbonara",
-      title: "Pasta Carbonara"
-    },
-    {
-      src: "fries.jpg",
-      alt: "Fries",
-      title: "Fries"
-    },
-    {
-      src: "desserts.jpg",
-      alt: "Chocolate Dessert",
-      title: "Chocolate Dessert"
-    }
-  ]
-
-  // Auto-slide functionality
+ const sliderImages = [
+  { src: "/burger.jpg", alt: "Burger with Fries", title: "Burger with Fries" },
+  { src: "/dish2.jpg", alt: "Pasta Carbonara", title: "Pasta Carbonara" },
+  { src: "/fries.jpg", alt: "Fries", title: "Fries" },
+  { src: "/desserts.jpg", alt: "Chocolate Dessert", title: "Chocolate Dessert" }
+] // Auto-slide functionality
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % sliderImages.length)
@@ -54,14 +36,14 @@ export default function HeroWithSlider() {
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Background Image */}
+      <div className="absolute inset-6">
       <Image
-        src="/images/restaurant-interior.jpg"
+        src="/images/restaurant.jpg"
         alt="Restaurant interior"
-       
+        priority       
         className="object-cover"
-        
-      />
-      
+        fill/>
+        </div>
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-amber-300 via-amber-300to-transparent"></div>
       
@@ -103,15 +85,13 @@ export default function HeroWithSlider() {
                           ? 'transform -translate-x-full'
                           : 'transform translate-x-full'
                     }`}
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      
-                      className="object-cover"
-                    />
-                    
-                    {/* Image overlay with title */}
+><Image
+  src={image.src}
+  alt={image.alt}
+  width={564}
+  height={650}
+  className="object-cover"
+/>{/* Image overlay with title */}
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                       <h3 className="text-white text-xl font-semibold">
                         {image.title}
@@ -170,7 +150,7 @@ export default function HeroWithSlider() {
                     <Image
                       src={image.src}
                       alt={image.alt}
-                      
+                      fill                      
                       className="object-cover"
                     />
                   </button>
@@ -194,9 +174,9 @@ export default function HeroWithSlider() {
               <Image
                 src={image.src}
                 alt={image.alt}
-               
+                fill               
                 className="object-cover"
-              />
+              /> 
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                 <h3 className="text-white text-lg font-semibold">
                   {image.title}

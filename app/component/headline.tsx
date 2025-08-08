@@ -8,7 +8,7 @@ export default function Headline() {
        Order Now
      </button>
      </div>
-     <img src="/headline.jpg" alt="Restaurant Logo" className="h-150 w-200   " />
+     <Image src="/headline.jpg" alt="Restaurant Logo" className="h-150 w-200   " />
     </div>
            
     );

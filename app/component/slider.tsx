@@ -1,4 +1,5 @@
 // components/HeroWithSlider.jsx
+import Image from 'next/image';
 'use client'
 import { useState, useEffect } from 'react'
 // import Image from 'next/image'
@@ -47,14 +48,14 @@ export default function HeroWithSlider() {
     setCurrentSlide((prev) => (prev - 1 + sliderImages.length) % sliderImages.length)
   }
 
-  const goToSlide = (index :any ) => {
+  const goToSlide = (index ) => {
     setCurrentSlide(index)
   }
 
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Background Image */}
-      <img
+      <Image
         src="/images/restaurant-interior.jpg"
         alt="Restaurant interior"
        
@@ -104,7 +105,7 @@ export default function HeroWithSlider() {
                           : 'transform translate-x-full'
                     }`}
                   >
-                    <img
+                    <Image
                       src={image.src}
                       alt={image.alt}
                       
@@ -167,7 +168,7 @@ export default function HeroWithSlider() {
                         : 'opacity-70 hover:opacity-100'
                     }`}
                   >
-                    <img
+                    <Image
                       src={image.src}
                       alt={image.alt}
                       
@@ -191,7 +192,7 @@ export default function HeroWithSlider() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
                

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 // components/MinimalFooter.jsx
 'use client'
 import { useState } from 'react'
@@ -152,26 +154,25 @@ export default function Footer() {
             
             {/* Navigation Links */}
             <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm text-gray-600">
-              <a href="#" className="hover:text-gray-900 transition-colors">
+              <Link href="#" className="hover:text-gray-900 transition-colors">
                 Home
-              </a>
-              <a href="#" className="hover:text-gray-900 transition-colors">
+              </Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors">
                 Menu
-              </a>
-              <a href="#" className="hover:text-gray-900 transition-colors">
+              </Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors">
                 Reservations
-              </a>
-              <a href="#" className="hover:text-gray-900 transition-colors">
+            </Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors">
                 About
-              </a>
-              <a href="#" className="hover:text-gray-900 transition-colors">
+              </Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
           
-          {/* Copyright */}
-          <div className="mt-6 text-center">
+            <div className="mt-6 text-center">
             <p className="text-xs text-gray-500">
               © 2025 Restaurant All rights reserved.SADIA SALEEM
             </p>

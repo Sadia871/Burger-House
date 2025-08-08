@@ -2,7 +2,8 @@ import Link from 'next/link';
 
 // components/MinimalFooter.jsx
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 
 export default function Footer() {
   const [formData, setFormData] = useState({

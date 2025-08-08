@@ -1,7 +1,8 @@
 // components/HeroWithSlider.jsx
-import Image from 'next/image';
+
 'use client'
 import { useState, useEffect } from 'react'
+import Image from 'next/image';
 // import Image from 'next/image'
 
 export default function HeroWithSlider() {
@@ -48,7 +49,7 @@ export default function HeroWithSlider() {
     setCurrentSlide((prev) => (prev - 1 + sliderImages.length) % sliderImages.length)
   }
 
-  const goToSlide = (index ) => {
+  const goToSlide = (index :number ) => {
     setCurrentSlide(index)
   }
 

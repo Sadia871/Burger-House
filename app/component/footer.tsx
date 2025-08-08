@@ -2,7 +2,7 @@
 
 // components/MinimalFooter.jsx
 'use client'
-import { useState, useEffect } from 'react'
+import { ChangeEvent, useState, useEffect ,FormEvent } from 'react'
 import Link from 'next/link';
 
 export default function Footer() {
@@ -12,14 +12,14 @@ export default function Footer() {
     message: ''
   })
 
-  const handleInputChange = (e:any ) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement> ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     })
   }
 
-  const handleSubmit = (e :any) => {
+  const handleSubmit = (e :FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
     // Reset form
@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="space-y-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-8">Contact us</h2>
             <p className="text-gray-600 text-sm leading-relaxed max-w-md">
-              We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
             </p>
             
             <div className="grid md:grid-cols-2 gap-8">

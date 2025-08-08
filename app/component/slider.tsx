@@ -57,7 +57,7 @@ export default function HeroWithSlider() {
              Bueger House Authentic Flavors
             </h2>
             <p className="text-xl mb-8 leading-relaxed">
-              Discover culinary excellence with our chef's special menu
+              Discover culinary excellence with our chef&apos;s special menu
             </p>
             <div className="flex gap-4">
               <button className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">

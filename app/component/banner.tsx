@@ -31,22 +31,3 @@ export default function Banner() {
        </div>
   )
 }
-
-// Alternative: Using Tailwind config for custom background images
-// // tailwind.config.js
-// module.exports = {
-//   theme: {
-//     extend: {
-//       backgroundImage: {
-//         'hero-pattern': "url('/images/hero-bg.jpg')",
-//         'restaurant-interior': "url('/images/restaurant.jpg')",
-//         'food-texture': "url('/images/food-pattern.jpg')",
-//       }
-//     }
-//   }
-// }
-
-// Then use in component:
-// <div className="bg-hero-pattern bg-cover bg-center h-screen">
-//   Content here
-// </div>
